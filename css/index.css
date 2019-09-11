@@ -133,10 +133,44 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
 }
-@hfont {
+.container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+/*this ends container*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-family: 'Niramit', sans-serif;
+  border-bottom: 0.2rem solid black;
+  padding: 2%;
+  margin: 3% 0;
 }
-@bfont {
+header h1 {
+  font-size: 6rem;
+}
+header p {
+  font-size: 2.5rem;
+  padding: 2%;
   font-family: 'K2D', sans-serif;
 }
+header nav {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  padding: 0 2%;
+  text-decoration: none;
+  color: black;
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: darkgrey;
+}
+/*this ends header*/

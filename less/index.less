@@ -55,22 +55,61 @@ table {
 
 html, body {
 	height: 100%;
+	font-size: 62.5%;
 }
 
 .flex(){
 	display:flex;
+	align-items: center;
 }
 
 .flex-column(){
 	display: flex;
 	flex-direction: column;
-	align-items: none
 }
 
-@hfont {
-	font-family:'Niramit', sans-serif;
-}
+@hfont:'Niramit', sans-serif;
 
-@bfont {
-	font-family: 'K2D', sans-serif;
-}
+
+@bfont:'K2D', sans-serif;
+
+.container {
+	width: 80vw;
+	.flex-column();
+	margin: 5%;
+}/*this ends container*/
+
+header {
+	.flex();
+	justify-content: space-between;
+	font-family: @hfont;
+	border-bottom:0.2rem solid black;
+	padding: 2%;
+	margin: 3% 0;
+
+	h1 {
+		font-size: 6rem;
+	}
+
+	p {
+		font-size: 2.5rem;
+		padding: 2%;
+		font-family: @bfont;
+	}
+
+	nav {
+		font-size: 1.5rem;
+		.flex();
+
+		a {
+			padding: 0 2%;
+			text-decoration: none;
+			color: black;
+		}
+		a:hover {
+			text-decoration: underline;
+			color: darkgrey;
+		}
+	}
+
+}/*this ends header*/

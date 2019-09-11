@@ -60,7 +60,7 @@ html, body {
 
 .flex(){
 	display:flex;
-	align-items: center;
+	
 }
 
 .flex-column(){
@@ -82,6 +82,7 @@ html, body {
 header {
 	.flex();
 	justify-content: space-between;
+	align-items: center;
 	font-family: @hfont;
 	border-bottom:0.2rem solid black;
 	padding: 2%;
@@ -110,6 +111,59 @@ header {
 			text-decoration: underline;
 			color: darkgrey;
 		}
-	}
+	}/*this ends nav*/
 
 }/*this ends header*/
+
+.skills-interests {
+	.flex();
+	justify-content: space-between;
+	
+	div {
+		width: 45%;
+		margin: 2%;
+	}
+
+	h2 {
+		font-size: 4rem;
+		font-family: @hfont;
+		margin-bottom: 2%;
+	}
+
+	ul {
+		font-size: 1.6rem;
+		font-family: @bfont;
+
+		li {
+			margin: 2% 1%;
+		}
+	}
+
+}/*this ends skills-interests */
+
+.work-history {
+	.flex-column();
+
+	h2 {
+		font-size: 4rem;
+		font-family: @hfont;
+		margin: 1% 0;
+	}
+
+	h3 {
+		font-size: 3rem;
+		font-family: @hfont;
+		margin: 1.5% 0;
+	}
+
+	h4 {
+		font-size: 2.2rem;
+		font-family: @hfont;
+		padding: 1% 0;
+	}
+
+	p{
+		font-size: 1.6rem;
+		font-family: @bfont;
+	}
+}/*this ends work-history */

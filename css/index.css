@@ -144,12 +144,13 @@ body {
 /*this ends container*/
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   font-family: 'Niramit', sans-serif;
   border-bottom: 0.2rem solid black;
   padding: 2%;
   margin: 3% 0;
+  /*this ends nav*/
 }
 header h1 {
   font-size: 6rem;
@@ -162,7 +163,6 @@ header p {
 header nav {
   font-size: 1.5rem;
   display: flex;
-  align-items: center;
 }
 header nav a {
   padding: 0 2%;
@@ -174,3 +174,48 @@ header nav a:hover {
   color: darkgrey;
 }
 /*this ends header*/
+.skills-interests {
+  display: flex;
+  justify-content: space-between;
+}
+.skills-interests div {
+  width: 45%;
+  margin: 2%;
+}
+.skills-interests h2 {
+  font-size: 4rem;
+  font-family: 'Niramit', sans-serif;
+  margin-bottom: 2%;
+}
+.skills-interests ul {
+  font-size: 1.6rem;
+  font-family: 'K2D', sans-serif;
+}
+.skills-interests ul li {
+  margin: 2% 1%;
+}
+/*this ends skills-interests */
+.work-history {
+  display: flex;
+  flex-direction: column;
+}
+.work-history h2 {
+  font-size: 4rem;
+  font-family: 'Niramit', sans-serif;
+  margin: 1% 0;
+}
+.work-history h3 {
+  font-size: 3rem;
+  font-family: 'Niramit', sans-serif;
+  margin: 1.5% 0;
+}
+.work-history h4 {
+  font-size: 2.2rem;
+  font-family: 'Niramit', sans-serif;
+  padding: 1% 0;
+}
+.work-history p {
+  font-size: 1.6rem;
+  font-family: 'K2D', sans-serif;
+}
+/*this ends work-history */

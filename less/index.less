@@ -60,7 +60,6 @@ html, body {
 
 .flex(){
 	display:flex;
-	
 }
 
 .flex-column(){
@@ -73,6 +72,13 @@ html, body {
 
 @bfont:'K2D', sans-serif;
 
+@lightfont: #FAEFD4;
+
+@darkfont: #4B4345;
+body {
+	background: #336B87;
+}
+
 .container {
 	width: 80vw;
 	.flex-column();
@@ -84,9 +90,10 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	font-family: @hfont;
-	border-bottom:0.2rem solid black;
 	padding: 2%;
 	margin: 3% 0;
+	background: #2A3132;
+	color: @lightfont;
 
 	h1 {
 		font-size: 6rem;
@@ -105,11 +112,11 @@ header {
 		a {
 			padding: 0 2%;
 			text-decoration: none;
-			color: black;
+			color: @lightfont;
 		}
 		a:hover {
 			text-decoration: underline;
-			color: darkgrey;
+			color: @darkfont;
 		}
 	}/*this ends nav*/
 
@@ -118,6 +125,9 @@ header {
 .skills-interests {
 	.flex();
 	justify-content: space-between;
+	background: #763626;
+	color: @lightfont;
+	margin-bottom: 3%;
 	
 	div {
 		width: 45%;
@@ -143,6 +153,9 @@ header {
 
 .work-history {
 	.flex-column();
+	background: #90AFC5;
+	color: @darkfont;
+	padding: 2%;
 
 	h2 {
 		font-size: 4rem;
@@ -167,3 +180,11 @@ header {
 		font-family: @bfont;
 	}
 }/*this ends work-history */
+
+footer {
+	.flex();
+	justify-content: space-between;
+	margin: 5% 0;
+	font-size: 1.6rem;
+	font-family: @bfont;
+}/* this ends footer */

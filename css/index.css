@@ -155,6 +155,7 @@ header {
   background: #2A3132;
   color: #FAEFD4;
   /*this ends nav*/
+  /* this ends media query */
 }
 header h1 {
   font-size: 6rem;
@@ -176,6 +177,25 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
   color: #4B4345;
+}
+@media screen and (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  header p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  header nav {
+    font-size: 1.2rem;
+    margin: 2% 0;
+  }
 }
 /*this ends header*/
 .skills-interests {
@@ -200,6 +220,20 @@ header nav a:hover {
 }
 .skills-interests ul li {
   margin: 2% 1%;
+}
+@media screen and (max-width: 500px) {
+  .skills-interests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .skills-interests h2 {
+    font-size: 2.2rem;
+  }
+  .skills-interests ul {
+    font-size: 1.2rem;
+  }
 }
 /*this ends skills-interests */
 .work-history {
@@ -228,6 +262,20 @@ header nav a:hover {
   font-size: 1.6rem;
   font-family: 'K2D', sans-serif;
 }
+@media screen and (max-width: 500px) {
+  .work-history h2 {
+    font-size: 2.2rem;
+  }
+  .work-history h3 {
+    font-size: 2rem;
+  }
+  .work-history h4 {
+    font-size: 1.8rem;
+  }
+  .work-history p {
+    font-size: 1rem;
+  }
+}
 /*this ends work-history */
 footer {
   display: flex;
@@ -235,5 +283,10 @@ footer {
   margin: 5% 0;
   font-size: 1.6rem;
   font-family: 'K2D', sans-serif;
+}
+@media screen and (max-width: 500px) {
+  footer {
+    font-size: 1rem;
+  }
 }
 /* this ends footer */

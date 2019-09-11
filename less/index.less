@@ -95,6 +95,8 @@ header {
 	background: #2A3132;
 	color: @lightfont;
 
+	
+
 	h1 {
 		font-size: 6rem;
 	}
@@ -120,6 +122,24 @@ header {
 		}
 	}/*this ends nav*/
 
+	@media screen and (max-width:500px) {
+		.flex-column();
+		align-items: center;
+		
+		h1 {
+			font-size:2.8rem;
+			text-align: center;
+		}
+		
+		p{
+			font-size: 1.4rem;
+			text-align: center;
+		}
+		nav {
+			font-size: 1.2rem;
+			margin:2% 0;
+		}
+	}/* this ends media query */
 }/*this ends header*/
 
 .skills-interests {
@@ -149,6 +169,19 @@ header {
 		}
 	}
 
+	@media screen and (max-width:500px) {
+		.flex-column();
+		align-items: center;
+		text-align: center;
+	
+		h2 {
+			font-size: 2.2rem;
+		}
+
+		ul {
+			font-size: 1.2rem;
+		}
+	}
 }/*this ends skills-interests */
 
 .work-history {
@@ -179,6 +212,24 @@ header {
 		font-size: 1.6rem;
 		font-family: @bfont;
 	}
+
+	@media screen and (max-width: 500px) {
+		h2 {
+			font-size:2.2rem;
+		}
+
+		h3 {
+			font-size: 2rem;
+		}
+
+		h4 {
+			font-size: 1.8rem;
+		}
+
+		p {
+			font-size: 1rem;
+		}
+	}
 }/*this ends work-history */
 
 footer {
@@ -187,4 +238,8 @@ footer {
 	margin: 5% 0;
 	font-size: 1.6rem;
 	font-family: @bfont;
+
+	@media screen and (max-width: 500px) {
+		font-size: 1rem;
+	}
 }/* this ends footer */

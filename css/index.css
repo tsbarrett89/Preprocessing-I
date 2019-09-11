@@ -134,3 +134,9 @@ html,
 body {
   height: 100%;
 }
+@hfont {
+  font-family: 'Niramit', sans-serif;
+}
+@bfont {
+  font-family: 'K2D', sans-serif;
+}

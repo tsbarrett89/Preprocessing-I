@@ -1,1 +1,292 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  background: #336B87;
+}
+.container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+/*this ends container*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Niramit', sans-serif;
+  padding: 2%;
+  margin: 3% 0;
+  background: #2A3132;
+  color: #FAEFD4;
+  /*this ends nav*/
+  /* this ends media query */
+}
+header h1 {
+  font-size: 6rem;
+}
+header p {
+  font-size: 2.5rem;
+  padding: 2%;
+  font-family: 'K2D', sans-serif;
+}
+header nav {
+  font-size: 1.5rem;
+  display: flex;
+}
+header nav a {
+  padding: 0 2%;
+  text-decoration: none;
+  color: #FAEFD4;
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: #4B4345;
+}
+@media screen and (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  header p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  header nav {
+    font-size: 1.2rem;
+    margin: 2% 0;
+  }
+}
+/*this ends header*/
+.skills-interests {
+  display: flex;
+  justify-content: space-between;
+  background: #763626;
+  color: #FAEFD4;
+  margin-bottom: 3%;
+}
+.skills-interests div {
+  width: 45%;
+  margin: 2%;
+}
+.skills-interests h2 {
+  font-size: 4rem;
+  font-family: 'Niramit', sans-serif;
+  margin-bottom: 2%;
+}
+.skills-interests ul {
+  font-size: 1.6rem;
+  font-family: 'K2D', sans-serif;
+}
+.skills-interests ul li {
+  margin: 2% 1%;
+}
+@media screen and (max-width: 500px) {
+  .skills-interests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .skills-interests h2 {
+    font-size: 2.2rem;
+  }
+  .skills-interests ul {
+    font-size: 1.2rem;
+  }
+}
+/*this ends skills-interests */
+.work-history {
+  display: flex;
+  flex-direction: column;
+  background: #90AFC5;
+  color: #4B4345;
+  padding: 2%;
+}
+.work-history h2 {
+  font-size: 4rem;
+  font-family: 'Niramit', sans-serif;
+  margin: 1% 0;
+}
+.work-history h3 {
+  font-size: 3rem;
+  font-family: 'Niramit', sans-serif;
+  margin: 1.5% 0;
+}
+.work-history h4 {
+  font-size: 2.2rem;
+  font-family: 'Niramit', sans-serif;
+  padding: 1% 0;
+}
+.work-history p {
+  font-size: 1.6rem;
+  font-family: 'K2D', sans-serif;
+}
+@media screen and (max-width: 500px) {
+  .work-history h2 {
+    font-size: 2.2rem;
+  }
+  .work-history h3 {
+    font-size: 2rem;
+  }
+  .work-history h4 {
+    font-size: 1.8rem;
+  }
+  .work-history p {
+    font-size: 1rem;
+  }
+}
+/*this ends work-history */
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+  font-size: 1.6rem;
+  font-family: 'K2D', sans-serif;
+}
+@media screen and (max-width: 500px) {
+  footer {
+    font-size: 1rem;
+  }
+}
+/* this ends footer */

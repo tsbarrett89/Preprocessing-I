@@ -54,6 +54,192 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
 
+.flex(){
+	display:flex;
+}
+
+.flex-column(){
+	display: flex;
+	flex-direction: column;
+}
+
+@hfont:'Niramit', sans-serif;
+
+
+@bfont:'K2D', sans-serif;
+
+@lightfont: #FAEFD4;
+
+@darkfont: #4B4345;
+body {
+	background: #336B87;
+}
+
+.container {
+	width: 80vw;
+	.flex-column();
+	margin: 5%;
+}/*this ends container*/
+
+header {
+	.flex();
+	justify-content: space-between;
+	align-items: center;
+	font-family: @hfont;
+	padding: 2%;
+	margin: 3% 0;
+	background: #2A3132;
+	color: @lightfont;
+
+	
+
+	h1 {
+		font-size: 6rem;
+	}
+
+	p {
+		font-size: 2.5rem;
+		padding: 2%;
+		font-family: @bfont;
+	}
+
+	nav {
+		font-size: 1.5rem;
+		.flex();
+
+		a {
+			padding: 0 2%;
+			text-decoration: none;
+			color: @lightfont;
+		}
+		a:hover {
+			text-decoration: underline;
+			color: @darkfont;
+		}
+	}/*this ends nav*/
+
+	@media screen and (max-width:500px) {
+		.flex-column();
+		align-items: center;
+		
+		h1 {
+			font-size:2.8rem;
+			text-align: center;
+		}
+		
+		p{
+			font-size: 1.4rem;
+			text-align: center;
+		}
+		nav {
+			font-size: 1.2rem;
+			margin:2% 0;
+		}
+	}/* this ends media query */
+}/*this ends header*/
+
+.skills-interests {
+	.flex();
+	justify-content: space-between;
+	background: #763626;
+	color: @lightfont;
+	margin-bottom: 3%;
+	
+	div {
+		width: 45%;
+		margin: 2%;
+	}
+
+	h2 {
+		font-size: 4rem;
+		font-family: @hfont;
+		margin-bottom: 2%;
+	}
+
+	ul {
+		font-size: 1.6rem;
+		font-family: @bfont;
+
+		li {
+			margin: 2% 1%;
+		}
+	}
+
+	@media screen and (max-width:500px) {
+		.flex-column();
+		align-items: center;
+		text-align: center;
+	
+		h2 {
+			font-size: 2.2rem;
+		}
+
+		ul {
+			font-size: 1.2rem;
+		}
+	}
+}/*this ends skills-interests */
+
+.work-history {
+	.flex-column();
+	background: #90AFC5;
+	color: @darkfont;
+	padding: 2%;
+
+	h2 {
+		font-size: 4rem;
+		font-family: @hfont;
+		margin: 1% 0;
+	}
+
+	h3 {
+		font-size: 3rem;
+		font-family: @hfont;
+		margin: 1.5% 0;
+	}
+
+	h4 {
+		font-size: 2.2rem;
+		font-family: @hfont;
+		padding: 1% 0;
+	}
+
+	p{
+		font-size: 1.6rem;
+		font-family: @bfont;
+	}
+
+	@media screen and (max-width: 500px) {
+		h2 {
+			font-size:2.2rem;
+		}
+
+		h3 {
+			font-size: 2rem;
+		}
+
+		h4 {
+			font-size: 1.8rem;
+		}
+
+		p {
+			font-size: 1rem;
+		}
+	}
+}/*this ends work-history */
+
+footer {
+	.flex();
+	justify-content: space-between;
+	margin: 5% 0;
+	font-size: 1.6rem;
+	font-family: @bfont;
+
+	@media screen and (max-width: 500px) {
+		font-size: 1rem;
+	}
+}/* this ends footer */
